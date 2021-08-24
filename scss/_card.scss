@@ -1,0 +1,151 @@
+.card {
+  width: 350px;
+  height: 75%;
+  background-color: gray;
+  border-radius: 0.8em;
+  box-shadow: 0 8px 20px $desaturated-blue;
+}
+
+.card .header-section {
+  width: 100%;
+  height: 30%;
+  background-image: url("../img/illustration-hero.svg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-top-left-radius: 0.8em;
+  border-top-right-radius: 0.8em;
+  //   background-color: orange;
+}
+
+.body-section {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  background-color: $very-pale-blue;
+  border-bottom-left-radius: 0.8em;
+  border-bottom-right-radius: 0.8em;
+}
+
+.order-summary {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.order-summary h2 {
+  margin-bottom: 0.5em;
+  color: $dark-blue;
+}
+
+.order-summary p {
+  font-size: $para-font-size;
+  text-align: center;
+  color: $desaturated-blue;
+}
+
+.annual-plan {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.plan-fee {
+  margin-left: -3em;
+}
+
+.annual-plan h3 {
+  color: $dark-blue;
+}
+
+.annual-plan p {
+  color: $desaturated-blue;
+}
+
+.annual-plan a:hover {
+  text-decoration: none;
+}
+
+.payment-btn {
+  width: 85%;
+  background-color: $pright-blue;
+  display: flex;
+  justify-content: center;
+  padding: 0.8em;
+  border-radius: 0.9em;
+  box-shadow: 0 8px 20px $desaturated-blue;
+}
+
+.payment-btn:hover {
+  background-color: $desaturated-blue;
+}
+
+.payment-btn a {
+  color: $very-pale-blue;
+  text-decoration: none;
+}
+
+.cancel-order {
+  color: $desaturated-blue;
+  text-decoration: none;
+  margin-top: 1.5em;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.cancel-order:hover {
+  color: $dark-blue;
+}
+
+@media screen and (max-width: $mobile) {
+  .card {
+    max-width: 330px;
+  }
+
+  .order-summary {
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+    height: 35%;
+  }
+
+  .order-summary h2 {
+    margin-bottom: 0.3em;
+    font-size: 1.2em;
+  }
+
+  .order-summary p {
+    font-size: 0.7em;
+    padding: 0.8em;
+  }
+
+  .annual-plan h3 {
+    font-size: 1em;
+  }
+
+  .annual-plan p {
+    font-size: 0.7em;
+  }
+
+  .annual-plan a {
+    font-size: 0.8em;
+  }
+
+  .plan-fee {
+    margin-left: -2em;
+  }
+
+  .payment-btn a {
+    font-size: 0.8em;
+  }
+}
+// end of the media query
